@@ -1,0 +1,43 @@
+{
+	"name": "@bridge-tools/generator",
+	"version": "0.0.1",
+	"description": "The library to generate bridge hands for the @bridge-tools packages.",
+	"author": "bridge-tools",
+	"license": "MIT",
+	"main": "dist/index.js",
+	"directories": {
+		"test": "test"
+	},
+	"files": [
+		"dist",
+		"LICENSE"
+	],
+	"scripts": {
+		"build": "tsc -p ./tsconfig-build.json",
+		"watch": "tsc --watch -p ./tsconfig-build.json",
+		"lint": "eslint src test",
+		"test": "jest",
+		"test-c": "jest --coverage",
+		"test-watch": "jest --watch",
+		"test-watch-c": "jest --watch --coverage"
+	},
+	"keywords": [
+		"javascript",
+		"typescript",
+		"bridge",
+		"bridge-tools",
+		"hand-generation"
+	],
+	"devDependencies": {
+		"@bridge-tools/config": ">=0.1.0"
+	},
+	"prettier": "@bridge-tools/config/prettier.json",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/bridge-tools/generator.git"
+	},
+	"dependencies": {
+		"tslib": "^2.3.1",
+		"@bridge-tools/core": ">=0.0.1"
+	}
+}
