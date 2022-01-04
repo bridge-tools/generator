@@ -1,6 +1,6 @@
 {
 	"name": "@bridge-tools/generator",
-	"version": "0.0.1",
+	"version": "0.0.2",
 	"description": "The library to generate bridge hands for the @bridge-tools packages.",
 	"author": "bridge-tools",
 	"license": "MIT",
